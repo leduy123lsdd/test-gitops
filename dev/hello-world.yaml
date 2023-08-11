@@ -31,6 +31,8 @@ apiVersion: v1
 kind: Service
 metadata:
   name: hello-world
+  annotations:
+    networking.gke.io/load-balancer-type: "Internal"
 spec:
   selector:
     app: hello-world
